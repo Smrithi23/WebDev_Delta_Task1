@@ -1,0 +1,67 @@
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="script.js"></script>
+    <meta charset=utf-8 />
+    <title>Food Tracker</title>
+</head>
+
+<body onload="asd(); excess();">
+    <div id="container">
+    <header><div id="bottom">Track your Food Everyday!</div></header>
+    </div>
+    <div id="main">
+    <form id="form1">
+        <div class="class">
+        Enter the following details:
+        </div>
+        <br>
+        Height (cm):
+        <input type="text" id="height" size="40"><br>
+        Weight (kg):
+        <input type="text" id="weight" size="40"><br>
+        Age:
+        <input type="text" id="age" size="40"><br>
+        <input id="button1" type="button" onClick="Cal()" value="Submit">
+    </form>
+
+    <table id="info">
+            <tr></tr>
+    </table>
+    <div id="asd">
+    <table id="Food_items">
+        <tr>
+            <th>Item Name</th>
+            <th>Calories</th>
+        </tr>
+    </table>
+    <form>
+        <div class="class">
+        Enter the food item and the calories it contains:
+        </div>
+        Item Name:
+        <input type="text" id="item_name" size="40"><br>
+        Calories:
+        <input type="text" id="calories" size="40"><br>
+        <input id="button2" type="button" onClick="AddFood()" value="Add Food Item">
+    </form>
+    <table id="final">
+        <tr>
+            <th>Total</th>
+            <th>Your Daily Goal</th>
+            <th>Remaining</th>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td id="ID"></td>
+        </tr>
+    </table>
+    </div>
+    <div id="excess">Exceeding Limit!!</div>
+    </div>
+    <footer>Eat Better | Lose Weight | Get Healthy</footer>
+</body>
+
+</html>
